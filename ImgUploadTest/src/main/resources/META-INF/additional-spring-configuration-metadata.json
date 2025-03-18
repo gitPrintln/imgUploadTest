@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "com.example.imgTest.upload.path",
+    "type": "java.lang.String",
+    "description": "A description for 'com.example.imgTest.upload.path'"
+  },
+  {
+    "name": "com.example.imgTest.upload.path",
+    "type": "java.lang.String",
+    "description": "A description for 'com.example.imgTest.upload.path'"
+  },
+  {
+    "name": "com.example.imgTest.upload.path",
+    "type": "java.lang.String",
+    "description": "A description for 'com.example.imgTest.upload.path'"
+  }
+]}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{ layout/layout-1 }">
+
+<div layout:fragment="content" align="center">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 업로드 테스트 중</title>
+    <!-- TUI 에디터 CSS CDN -->
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+</head>
+    
+</head>
+<body>
+    <div>
+        <div id="content"></div>
+    </div>
+<th:block layout:fragment="script">
+	<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+    <script th:src="@{ /js/home.js }"></script>
+</th:block>
+</body>
+</div>
+</html>
