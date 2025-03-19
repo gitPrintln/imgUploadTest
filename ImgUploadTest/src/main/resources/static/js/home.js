@@ -23,7 +23,7 @@ const editor = new toastui.Editor({
                         
                         console.log(blob)
                         // 2. FileApiController - uploadEditorImage 메서드 호출
-                        const response = await fetch('/image-upload', {
+                        const response = await fetch('/upload', {
                             method : 'POST',
                             body : formData,
                         });
@@ -33,8 +33,8 @@ const editor = new toastui.Editor({
                         console.log('서버에 저장된 파일명 : ', filename);
     
                         // 4. addImageBlobHook의 callback 함수를 통해, 디스크에 저장된 이미지를 에디터에 렌더링
-                        //const imageUrl = `/tui-editor/image-print?filename=${filename}`;
-                        //callback(imageUrl, 'image alt attribute');
+                        const imageUrl = `/rendering?filename=${filename}`;
+                        callback(imageUrl, 'image alt attribute');
     
                     } catch (error) {
                         console.error('업로드 실패 : ', error);
